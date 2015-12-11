@@ -1,15 +1,27 @@
 {
-	"name": "atividade-server",
-	"version": "1.0.0",
-	"description": "API que cadastra fotos por categoria ou tags em NodeJS",
-	"main": "app.js",
-	"scripts": {
-		"start": "nodemon --quiet app.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Luiz Araújo",
-	"license": "MIT",
-	"dependencies": {
-		"express": "^4.13.3"
-	}
+  "name": "atividade-server",
+  "version": "1.0.0",
+  "description": "API que cadastra fotos por categoria ou tags em NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --quiet app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luiz Araújo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.10",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-things": "^0.2.0",
+    "gulp": "^3.9.0",
+    "jsonwebtoken": "^5.4.1",
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0",
+    "things": "^1.1.0"
+  }
 }
