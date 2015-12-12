@@ -32,7 +32,7 @@ function create(req, res) {
   };
 
   let error = function(err) {
-    console.log(err);
+    // console.log(err);
     res.status(400).json({
       message: 'algo errado'
     });
@@ -41,7 +41,8 @@ function create(req, res) {
   category
     .save()
     .then(success, error);
-};
+};	
+
 
 function get(req, res) {
   Categories

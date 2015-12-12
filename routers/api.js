@@ -19,11 +19,12 @@ router
 router
 	.route('/categories/:id')
 	.get(controllers.categories.get)
-	// .put(controllers.categories.update)
-	// .delete(controllers.categories.delete);
+	.put(controllers.categories.update)
+	.delete(controllers.categories.delete);
 
 router
 	.route('/images')
+	.post(controllers.images.list)
 	.post(controllers.images.create);
 
 module.exports = router;
