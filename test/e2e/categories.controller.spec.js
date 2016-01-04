@@ -25,8 +25,7 @@ describe('Categories controller', function(){
 		it('should return a json array of confirmation', function(done){
 			request(app)
 				.post('/api/categories')
-				.field('firstname', 'adsfa')
-				.field('email', 'adsfasdf')
+				.field('name', 'Luiz')
 				.end(function (err, res){
 					expect(res.statusCode).to.be.equal(201);
 					expect(res.body).to.be.property('message', 'created');

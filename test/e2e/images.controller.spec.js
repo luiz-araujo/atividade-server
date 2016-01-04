@@ -15,7 +15,8 @@ describe('Images controller', function(){
 				.end(function (err, res){
 					expect(res.statusCode).to.be.equal(200);
 					expect(res.body).to.be.an('array');
-					expect(res.body).all.have.property('name');
+					expect(res.body).all.have.property('url');
+					expect(res.body).all.have.property('categories');
 					done();
 				})
 		});

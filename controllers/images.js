@@ -15,7 +15,7 @@ function list(req, res){
 		.then(function(images){
 			res.json(images);
 		});
-	
+
 };
 
 
@@ -27,19 +27,19 @@ function create(req, res) {
 		msg: 'asdfas'
 	})
 
- 	let images = new Images(req.body);
+	 let images = new Images(req.body);
 
- 	images
- 		.save()
- 		.then(success)
+	 images
+		 .save()
+		 .then(success)
 
- 	function sucess(status) {
-	  res
+	 function sucess(status) {
+		res
 		.status(201)
 		.json({
-		  message: 'created'
+			message: 'created'
 		});
-  };
+	};
 };
 
 
@@ -67,16 +67,16 @@ function create(req, res) {
 //   images
 //     .save()
 //     .then(success, error);
-// };	
+// };
 
 
 function get(req, res) {
 	console.log(req.params);
-  Images
-    .findById(req.params.id)
-    .then(function(image) {
-      res.json(image);
-    });
+	Images
+		.findById(req.params.id)
+		.then(function(image) {
+			res.json(image);
+		});
 }
 
 function update(req, res){

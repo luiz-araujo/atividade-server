@@ -24,7 +24,7 @@ router
 
 router
 	.route('/images')
-	.post(controllers.images.list)
+	.get(controllers.images.list)
 	.post(controllers.images.create);
 
 module.exports = router;
